@@ -87,9 +87,7 @@ humanoid.AnimationPlayed:Connect(onAnimationPlayed)
 
 local animationId = 10466974800
 
-
 animstop()
-end
 
 local AnimAnim = Instance.new("Animation")
 

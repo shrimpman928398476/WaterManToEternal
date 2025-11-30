@@ -4,7 +4,7 @@ local hotbar = playerGui:FindFirstChild("Hotbar")
 local backpack = hotbar:FindFirstChild("Backpack")
 local hotbarFrame = backpack:FindFirstChild("Hotbar")
 
-
+function basemove()
 --Move & Ultimate Names
 
 local baseButton = hotbarFrame:FindFirstChild("1").Base
@@ -39,6 +39,44 @@ local ToolName = baseButton.ToolName
 
 
 ToolName.Text = "Move4"
+
+function ultname()
+--Move & Ultimate Names
+
+local baseButton = hotbarFrame:FindFirstChild("1").Base
+
+local ToolName = baseButton.ToolName
+
+
+ToolName.Text = "Move1"
+
+
+local baseButton = hotbarFrame:FindFirstChild("2").Base
+
+local ToolName = baseButton.ToolName
+
+
+ToolName.Text = "Move2"
+
+
+
+local baseButton = hotbarFrame:FindFirstChild("3").Base
+
+local ToolName = baseButton.ToolName
+
+
+ToolName.Text = "Move3"
+
+
+
+local baseButton = hotbarFrame:FindFirstChild("4").Base
+
+local ToolName = baseButton.ToolName
+
+
+ToolName.Text = "Move4"
+
+
 --[[Animations]]
 
 --[[Move 1]]

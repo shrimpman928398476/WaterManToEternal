@@ -46,7 +46,7 @@ ToolName.Text = "Move4"
 
 
 
-function animstop()
+local function animstop()
 for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
 
     animTrack:Stop()

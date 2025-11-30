@@ -79,6 +79,7 @@ for _, animTrack in pairs(p:GetPlayingAnimationTracks()) do
 end
 
 local AnimAnim = Instance.new("Animation")
+
 AnimAnim.AnimationId = "rbxassetid://85025226664507"
 
 local Anim = Humanoid:LoadAnimation(AnimAnim)
@@ -103,9 +104,6 @@ end
 --[[END OF MOVE 1 ANIM]]
 
 --[[Move 2]]
-
-
-humanoid.AnimationPlayed:Connect(onAnimationPlayed)
 
 
 local animationId = 10466974800

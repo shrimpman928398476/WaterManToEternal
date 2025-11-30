@@ -52,7 +52,7 @@ local p = game.Players.LocalPlayer.Humanoid
 for _, animTrack in pairs(p:GetPlayingAnimationTracks()) do
     animTrack:Stop()
 end
-end
+
 
 local AnimAnim = Instance.new("Animation")
 

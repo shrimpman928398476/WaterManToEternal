@@ -1,11 +1,3 @@
-local cam = workspace.CurrentCamera
-local mouse = plr:GetMouse()
-
-local ch = plr.Character
-local rt = ch.HumanoidRootPart
-local hum = ch:WaitForChild("Humanoid")
-local chosenchar = ch:GetAttribute("Character")
-
 
 
 local player = game.Players.LocalPlayer
@@ -13,6 +5,16 @@ local playerGui = player.PlayerGui
 local hotbar = playerGui:FindFirstChild("Hotbar")
 local backpack = hotbar:FindFirstChild("Backpack")
 local hotbarFrame = backpack:FindFirstChild("Hotbar")
+
+local cam = workspace.CurrentCamera
+local mouse = player:GetMouse()
+
+local ch = player.Character
+local rt = ch.HumanoidRootPart
+local hum = ch:WaitForChild("Humanoid")
+local chosenchar = ch:GetAttribute("Character")
+
+
 
 print(chosenchar) --prints the character ur currently using (press F9 to see prints)
 

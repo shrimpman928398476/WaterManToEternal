@@ -7,6 +7,8 @@ local hotbar = playerGui:FindFirstChild("Hotbar")
 local backpack = hotbar:FindFirstChild("Backpack")
 
 local hotbarFrame = backpack:FindFirstChild("Hotbar")
+
+
 local base1 = hotbarFrame:FindFirstChild("1").Base
 local base2 = hotbarFrame:FindFirstChild("2").Base
 local base3 = hotbarFrame:FindFirstChild("3").Base

@@ -35,7 +35,7 @@ ToolName.Text = "Move4"
 
 local animationId = 10468665991
 
-local function animstop()
+function animstop()
 local player = game.Players.LocalPlayer
 
 local character = player.Character or player.CharacterAdded:Wait()

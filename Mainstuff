@@ -48,7 +48,7 @@ local baseButton = hotbarFrame:FindFirstChild("1").Base
 local ToolName = baseButton.ToolName
 
 
-ToolName.Text = "Move1"
+ToolName.Text = "Fuh naw"
 
 
 local baseButton = hotbarFrame:FindFirstChild("2").Base

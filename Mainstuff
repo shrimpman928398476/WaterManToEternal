@@ -4,35 +4,37 @@ local hotbar = playerGui:FindFirstChild("Hotbar")
 local backpack = hotbar:FindFirstChild("Backpack")
 local hotbarFrame = backpack:FindFirstChild("Hotbar")
 
+
+
 --Move & Ultimate Names
 
-local one = hotbarFrame:FindFirstChild("1").Base
+local base = hotbarFrame:FindFirstChild("1").Base
 
-local ToolName = one.ToolName
+local ToolName = base.ToolName
 
 
 ToolName.Text = "Move1"
 
 
-local two = hotbarFrame:FindFirstChild("2").Base
+local base = hotbarFrame:FindFirstChild("2").Base
 
-local ToolName = two.ToolName
+local ToolName = base.ToolName
 
 
 ToolName.Text = "Move2"
 
 
-local three = hotbarFrame:FindFirstChild("3").Base
+local base = hotbarFrame:FindFirstChild("3").Base
 
-local ToolName = three.ToolName
+local ToolName = base.ToolName
 
 
 ToolName.Text = "Move3"
 
 
-local four = hotbarFrame:FindFirstChild("4").Base
+local base = hotbarFrame:FindFirstChild("4").Base
 
-local ToolName = three.ToolName
+local ToolName = base.ToolName
 
 
 ToolName.Text = "Move4"

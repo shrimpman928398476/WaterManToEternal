@@ -46,10 +46,8 @@ ToolName.Text = "Move4"
 
 
 
-local function animstop()
-for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
 
-    animTrack:Stop()
+
 
 
 --[[Animations]]
@@ -75,8 +73,9 @@ local p = game.Players.LocalPlayer
 
 local Humanoid = p.Character:WaitForChild("Humanoid")
 
+for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
 
-animstop()
+    animTrack:Stop()
 
 end
 
@@ -131,8 +130,9 @@ local p = game.Players.LocalPlayer
 
 local Humanoid = p.Character:WaitForChild("Humanoid")
 
+for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
 
-animstop()
+    animTrack:Stop()
 
 end
 
@@ -187,8 +187,9 @@ local p = game.Players.LocalPlayer
 
 local Humanoid = p.Character:WaitForChild("Humanoid")
 
+for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
 
-animstop()
+    animTrack:Stop()
 
 end
 
@@ -249,8 +250,9 @@ local p = game.Players.LocalPlayer
 
 local Humanoid = p.Character:WaitForChild("Humanoid")
 
+for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
 
-animstop()
+    animTrack:Stop()
 
 end
 
@@ -302,7 +304,9 @@ local p = game.Players.LocalPlayer
 
 local Humanoid = p.Character:WaitForChild("Humanoid")
 
-animstop()
+for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
+
+    animTrack:Stop()
 
 end
 
@@ -355,8 +359,9 @@ local p = game.Players.LocalPlayer
 
 local Humanoid = p.Character:WaitForChild("Humanoid")
 
+for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
 
-animstop()
+    animTrack:Stop()
 
 end
 
@@ -407,8 +412,9 @@ local p = game.Players.LocalPlayer
 
 local Humanoid = p.Character:WaitForChild("Humanoid")
 
+for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
 
-animstop()
+    animTrack:Stop()
 
 end
 
@@ -467,7 +473,9 @@ local p = game.Players.LocalPlayer
 
 local Humanoid = p.Character:WaitForChild("Humanoid")
 
-animstop()
+for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
+
+    animTrack:Stop()
 
 end
 
@@ -520,7 +528,9 @@ local p = game.Players.LocalPlayer
 
 local Humanoid = p.Character:WaitForChild("Humanoid")
 
-animstop()
+for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
+
+    animTrack:Stop()
 
 end
 

@@ -5,7 +5,8 @@ local playerGui = player.PlayerGui
 local hotbar = playerGui:FindFirstChild("Hotbar")
 local backpack = hotbar:FindFirstChild("Backpack")
 local hotbarFrame = backpack:FindFirstChild("Hotbar")
-local AnimAnim = Instance.new("Animation")
+
+
 --Move & Ultimate Names
 
 local baseButton = hotbarFrame:FindFirstChild("1").Base
@@ -52,7 +53,7 @@ for _, animTrack in pairs(p:GetPlayingAnimationTracks()) do
     animTrack:Stop()
 end
 
-
+local AnimAnim = Instance.new("Animation")
 AnimAnim.AnimationId = "rbxassetid://17838006839"
 
 local Anim = Humanoid:LoadAnimation(AnimAnim)

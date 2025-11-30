@@ -6,11 +6,6 @@ local rt = ch.HumanoidRootPart
 local hum = ch:WaitForChild("Humanoid")
 local chosenchar = ch:GetAttribute("Character")
 
-print(chosenchar) --prints the character ur currently using (press F9 to see prints)
-
-if chosenchar == "Bald" then --checks if using right character
-	local isult = false
-
 
 
 local player = game.Players.LocalPlayer
@@ -18,6 +13,12 @@ local playerGui = player.PlayerGui
 local hotbar = playerGui:FindFirstChild("Hotbar")
 local backpack = hotbar:FindFirstChild("Backpack")
 local hotbarFrame = backpack:FindFirstChild("Hotbar")
+
+print(chosenchar) --prints the character ur currently using (press F9 to see prints)
+
+if chosenchar == "Bald" then --checks if using right character
+	local isult = false
+
 
 function basemove()
 --Move & Ultimate Names
@@ -101,8 +102,8 @@ local ToolName = baseButton.ToolName
 
 
 ToolName.Text = "Move4"
-end
 
+basemove()
 --[[Animations]]
 
 --[[Move 1]]

@@ -11,30 +11,55 @@ local hotbarFrame = backpack:FindFirstChild("Hotbar")
 
 local baseButton = hotbarFrame:FindFirstChild("1").Base
 local ToolName = baseButton.ToolName
-ToolName.Text = "Move1"
+ToolName.Text = "Countless Strikes"
 
 
 local baseButton = hotbarFrame:FindFirstChild("2").Base
 local ToolName = baseButton.ToolName
-ToolName.Text = "Move2"
+ToolName.Text = "Stratospheric Slam"
 
 
 
 local baseButton = hotbarFrame:FindFirstChild("3").Base
 local ToolName = baseButton.ToolName
-ToolName.Text = "Move3"
+ToolName.Text = "Spacial Warp"
 
 
 local baseButton = hotbarFrame:FindFirstChild("4").Base
 local ToolName = baseButton.ToolName
-ToolName.Text = "Move4"
+ToolName.Text = "True Prediction"
 
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+local function waitForGui()
+local bar = playerGui:FindFirstChild("Bar")
+ 	if bar then 
+local magicHealth = bar:FindFirstChild("MagicHealth")
+	if magicHealth then
+local textLabel = magicHealth:FindFirstChild("TextLabel")
+	if textLabel then
+                textLabel.Text = "ETERNAL"
+	                playerGui.Bar.MagicHealth.Health.Bar.Bar.ImageColor3 = Color3.fromRGB(0, 105, 205)
+	                game:GetService("TweenService"):Create(playerGui.Bar.MagicHealth.Health.Bar.Bar, TweenInfo.new(5, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, -1, true), {ImageColor3 = Color3.fromRGB(26, 26, 26)}):Play()
+	                playerGui.Bar.MagicHealth.TextLabel.Font = Enum.Font.Merriweather
+	                playerGui.Bar.MagicHealth.TextLabel.TextLabel.Font = Enum.Font.Merriweather
+	                playerGui.Bar.MagicHealth.TextLabel.TextSize = 26
+	                playerGui.Bar.MagicHealth.TextLabel.TextLabel.TextSize = 26
+            end
+        end
+    end
+end
+playerGui.DescendantAdded:Connect(findGuiAndSetText)
 
+waitForGui()
 --[[Animations]]
 
 --[[Move 1]]
 
-local animationId = 10468665991
+humanoid.AnimationPlayed:Connect(onAnimationPlayed)
+
+local animationId = 12272894215
 
 local player = game.Players.LocalPlayer
 

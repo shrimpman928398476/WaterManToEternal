@@ -755,27 +755,6 @@ player.CharacterAdded:Connect(function(newCharacter)
 
 end) 
 
---[[Adding Quote or Message when Executed]]
-
-local player = game.Players.LocalPlayer
-repeat wait() until player.Character
-local character = player.Character or player.CharacterAdded:Wait()
-local humanoid = character:WaitForChild("Humanoid")
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-
--- Messages to send
-local messages = {"MESSAGE x1", "MESSAGE x2", "MESSAGE x3", "MESSAGE x4"}
-
-local function sendMessage(text)
-    ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(text, "All")
-end
-
-for _, message in ipairs(messages) do
-    sendMessage(message)
-    wait(1.7) -- Wait time for each message
-end
-
---[[END OF QUOTES]]
 
 --[[Idle Animation]]
 

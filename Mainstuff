@@ -1,11 +1,7 @@
 local player = game.Players.LocalPlayer
-
 local playerGui = player.PlayerGui
-
 local hotbar = playerGui:FindFirstChild("Hotbar")
-
 local backpack = hotbar:FindFirstChild("Backpack")
-
 local hotbarFrame = backpack:FindFirstChild("Hotbar")
 
 --Move & Ultimate Names
@@ -35,7 +31,7 @@ ToolName.Text = "Move3"
 
 local four = hotbarFrame:FindFirstChild("4").Base
 
-local ToolName = four.ToolName
+local ToolName = three.ToolName
 
 
 ToolName.Text = "Move4"
